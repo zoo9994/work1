@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+/* 본고딕 */
+@font-face{
+	font-family: 'NotoKr';
+	font-weight: 200;
+	src: url("../fonts/NotoSansCJKkr-Light.woff2") format('woff2'),
+	url("../fonts/NotoSansCJKkr-Light.woff") format('woff');
+}
+@font-face{
+	font-family: 'NotoKr';
+	font-weight: 300;
+	src: url("../fonts/NotoSansCJKkr-DemiLight.woff2") format('woff2'),
+	url("../fonts/NotoSansCJKkr-DemiLight.woff") format('woff');
+}
+@font-face{
+	font-family: 'NotoKr';
+	font-weight: 400;
+	src: url("../fonts/NotoSansCJKkr-Regular.woff2") format('woff2'),
+		url("../fonts/NotoSansCJKkr-Regular.woff") format('woff');
+}
+@font-face{
+	font-family: 'NotoKr';
+	font-weight: 500;
+	src: url("../fonts/NotoSansCJKkr-Medium.woff2") format('woff2'),
+	url("../fonts/NotoSansCJKkr-Medium.woff") format('woff');
+}
+@font-face{
+	font-family: 'NotoKr';
+	font-weight: 600;
+	src: url("../fonts/NotoSansCJKkr-Bold.woff2") format('woff2'),
+	url("../fonts/NotoSansCJKkr-Bold.woff") format('woff');
+}
+
+/* 에스코어드림 */
+@font-face{
+	font-family:'s-coredream';
+	font-weight: 100;
+	src:url("../fonts/S-CoreDream-1Thin.woff") format('woff');
+}
+/* 필요시 200 > 300으로 대체 사용 */
+@font-face{
+	font-family:'s-coredream';
+	font-weight: 200;
+	src:url("../fonts/S-CoreDream-3Light.woff2") format('woff2'),
+	url("../fonts/S-CoreDream-3Light.woff") format('woff');
+}
+/* 흐림으로 300 > 400으로 대체 사용 */
+@font-face{
+	font-family:'s-coredream';
+	font-weight: 300;
+	src:url("../fonts/S-CoreDream-4Regular.woff2") format('woff2'),
+	url("../fonts/S-CoreDream-4Regular.woff") format('woff');
+}
+@font-face{
+	font-family:'s-coredream';
+	font-weight: 400;
+	src:url("../fonts/S-CoreDream-4Regular.woff2") format('woff2'),
+	url("../fonts/S-CoreDream-4Regular.woff") format('woff');
+}
+@font-face{
+	font-family:'s-coredream';
+	font-weight: 500;
+	src:url("../fonts/S-CoreDream-5.woff2") format('woff2'),
+	url("../fonts/S-CoreDream-5.woff") format('woff');
+}
+@font-face{
+	font-family:'s-coredream';
+	font-weight: 600;
+	src:url("../fonts/S-CoreDream-6Bold.woff2") format('woff2'),
+	url("../fonts/S-CoreDream-6Bold.woff") format('woff');
+}
+@font-face{
+	font-family:'s-coredream';
+	font-weight: 700;
+	src:url("../fonts/S-CoreDream-7ExtraBold.woff2") format('woff2'),
+	url("../fonts/S-CoreDream-7ExtraBold.woff") format('woff');
+}
+
+/* 지마켓 */
+
+@font-face{
+	font-family: 'Gmarket';
+	font-weight: 400;
+	src: url("../fonts/GmarketSansLight.woff2") format('woff2'),
+	url("../fonts/GmarketSansLight.woff") format('woff');
+}
+@font-face{
+	font-family: 'Gmarket';
+	font-weight: 600;
+	src: url("../fonts/GmarketSansMedium.woff2") format('woff2'),
+	url("../fonts/GmarketSansMedium.woff") format('woff');
+}
+@font-face{
+	font-family: 'Gmarket';
+	font-weight: 800;
+	src: url("../fonts/GmarketSansBold.woff2") format('woff2'),
+	url("../fonts/GmarketSansBold.woff") format('woff');
+}

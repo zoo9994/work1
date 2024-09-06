@@ -1,0 +1,1855 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport"
+        content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=yes" />
+    <meta name="keywords" content="@@{siteInfo.siteKwrd}" />
+    <meta name="description" content="@@{siteInfo.siteDc}" />
+    <link rel="stylesheet" type="text/css" href="../booking/css/font.css" />
+    <link rel="stylesheet" href="../booking/css/main.css">
+    <script src="../booking/js/jquery-1.12.4.min.js"></script>
+    <script src="../booking/js/plugins.js"></script>
+    <script src="../booking/js/program.min.js"></script>
+    <script src="../booking/js/main.js"></script>
+    <script src="../booking/js/common.js"></script>
+    <script src="../booking/js/sub.js"></script>
+    <title>@@{menuInfo.cntntsNm} - @@{siteInfo.siteNm}</title>
+</head>
+
+<body id="${siteInfo.tmplatId}" class="@@{siteInfo.siteId} page@@{key}">
+    <div id="wrapper">
+
+
+        <header id="header">
+            <div class="accessibility">
+                <a href="#contents">본문 바로가기</a>
+            </div>
+
+            <div class="wrap">
+                <div class="gnb">
+                    <div class="site">
+                        <ul class="site_list">
+                            <li class="site_item n1"><a href="#" class="site_anchor">사이트1</a></li>
+                            <li class="site_item n2"><a href="#" class="site_anchor">사이트2</a></li>
+                            <li class="site_item n3"><a href="#" class="site_anchor">사이트3</a></li>
+                            <li class="site_item n4"><a href="#" class="site_anchor">사이트4</a></li>
+                        </ul>
+                    </div>
+                    <div class="link">
+                        <ul class="link_list">
+                            <li class="link_item login"><a href="#" class="link_anchor">로그인</a></li>
+                            <!-- <li class="link_item logout"><a href="#" class="link_anchor">로그아웃</a></li> -->
+
+                            <li class="link_item language toggle" aria-labelledby="language">
+                                <button class="language_show link_button" aria-expanded="false"
+                                    aria-controls="language_panel">LANGUAGE</button>
+                                <div id="language_panel" class="language_panel">
+                                    <ul class="language_list">
+                                        <li class="language_item"><a href="#n" class="language_anchor">Korean</a></li>
+                                        <li class="language_item"><a href="#n" class="language_anchor">English</a></li>
+                                        <li class="language_item"><a href="#n" class="language_anchor">China</a></li>
+                                        <li class="language_item"><a href="#n" class="language_anchor">Japan</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="link_item sitemap"><a href="#" class="link_anchor">사이트맵</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="group">
+                    <div class="logo">
+                        <a href="./index.do" class="logo_anchor"><img src="/common/images/layout/logo.png"
+                                alt="로고alt"></a>
+                    </div>
+
+                    <div class="search toggle">
+                        <h2 class="skip">통합검색</h2>
+                        <button type="button" class="search_show">통합검색 열기</button>
+                        <div class="search_panel">
+                            <form action="" method="post" class="search_form">
+                                <fieldset class="search_fieldset">
+                                    <legend>검색</legend>
+                                    <div class="search_input">
+                                        <input type="search" class="search_query" name="query" title="검색어"
+                                            placeholder="검색어를 입력해주세요" />
+                                    </div>
+                                    <input type="submit" class="search_submit" value="검색" />
+                                </fieldset>
+                            </form>
+                            <button type="button" class="search_hide">통합검색 닫기</button>
+                        </div>
+                    </div>
+
+                    <div class="weather">
+                        <h2 class="skip">날씨</h2>
+                        <div class="weather_content">
+                            <div class="weather_info">
+                                <span class="weather_sate type1">맑음</span>
+                                <span class="weather_date">04.02.금</span>
+                                <span class="weather_celsius"><span>22</span><span>℃</span></span>
+                            </div>
+                            <div class="weather_indicator">
+                                <div class="weather_aqi">
+                                    <span class="weather_title">미세먼지</span>
+                                    <span class="weather_index type1"><span>37㎍/m³</span><span
+                                            class="weather_level">보통</span></span>
+                                </div>
+                                <div class="weather_cal">
+                                    <span class="weather_title">대기환경지수</span>
+                                    <span class="weather_index type1"><span class="weather_level">보통</span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lnb">
+
+                <div class="menu_show">
+                    <button type="button" class="menu_btn">주메뉴 열기</button>
+                </div>
+
+                <nav class="menu after eachdown">
+                    <h2 class="skip">주메뉴</h2>
+
+                    <div class="menu_header">
+                        <div class="link">
+                            <ul class="link_list">
+                                <li class="link_item login"><a href="#" class="link_anchor">로그인</a></li>
+                                <!-- <li class="link_item logout"><a href="#" class="link_anchor">로그아웃</a></li> -->
+                                <li class="link_item language toggle">
+                                    <button class="language_show link_button">LANGUAGE</button>
+                                    <div class="language_panel">
+                                        <ul class="language_list">
+                                            <li class="language_item"><a href="#n" class="language_anchor">Korean</a>
+                                            </li>
+                                            <li class="language_item"><a href="#n" class="language_anchor">English</a>
+                                            </li>
+                                            <li class="language_item"><a href="#n" class="language_anchor">China</a>
+                                            </li>
+                                            <li class="language_item"><a href="#n" class="language_anchor">Japan</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="link_item sitemap"><a href="#" class="link_anchor">사이트맵</a></li>
+                            </ul>
+                        </div>
+                        <div class="site">
+                            <ul class="site_list">
+                                <li class="site_item n1"><a href="#n" class="site_anchor">사이트1</a></li>
+                                <li class="site_item n2"><a href="#n" class="site_anchor">사이트2</a></li>
+                                <li class="site_item n3"><a href="#n" class="site_anchor">사이트3</a></li>
+                                <li class="site_item n4"><a href="#n" class="site_anchor">사이트4</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="wrap">
+                        <div class="depth depth1">
+                            <!-- 차수에 맞는 숫자와 조합하여 클래스를 넣어주세요 (예 : depth#, depth#_#) -->
+                            <ul class="depth_list depth1_list cut">
+                                <li class="depth_item depth1_item">
+                                    <a href="#n" target="_self" class="depth_text depth1_text">1차메뉴</a>
+                                    <div class="depth depth2">
+                                        <div class="depth2_content">
+                                            <div class="depth_title depth2_title">
+                                                <div class="depth2_info">
+                                                    <span class="depth2_slogan">슬로건</span>
+                                                    <span class="depth2_subject">현재메뉴명</span>
+                                                </div>
+                                            </div>
+                                            <ul class="depth_list depth2_list cut">
+                                                <li class="depth_item depth2_item">
+                                                    <a href="#n" target="_self" class="depth_text depth2_text">2차메뉴</a>
+                                                    <div class="depth depth3">
+                                                        <ul class="depth_list depth3_list">
+                                                            <li class="depth_item depth3_item">
+                                                                <a href="#n" target="_self"
+                                                                    class="depth_text depth3_text">3차메뉴</a>
+                                                                <div class="depth depth4">
+                                                                    <ul class="depth_list depth4_list cut">
+                                                                        <li class="depth_item depth4_item">
+                                                                            <a href="#n" target="_self"
+                                                                                class="depth_text depth4_text">4차메뉴명</a>
+                                                                        </li>
+                                                                        <li class="depth_item depth4_item">
+                                                                            <a href="#n" target="_blank" title="새창"
+                                                                                rel="noopener noreferrer"
+                                                                                class="depth_text depth4_text">4차메뉴명(새창)</a>
+                                                                        </li>
+                                                                        <li class="depth_item depth4_item">
+                                                                            <a href="#n" target="_self"
+                                                                                class="depth_text depth4_text">4차메뉴명</a>
+                                                                        </li>
+                                                                        <li class="depth_item depth4_item">
+                                                                            <a href="#n" target="_self"
+                                                                                class="depth_text depth4_text">4차메뉴명</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </li>
+                                                            <li class="depth_item depth3_item">
+                                                                <a href="#n" target="_blank" title="새창"
+                                                                    rel="noopener noreferrer"
+                                                                    class="depth_text depth3_text">3차메뉴(새창)</a>
+                                                            </li>
+                                                            <li class="depth_item depth3_item">
+                                                                <a href="#n" target="_self"
+                                                                    class="depth_text depth3_text">3차메뉴</a>
+                                                            </li>
+                                                            <li class="depth_item depth3_item">
+                                                                <a href="#n" target="_self"
+                                                                    class="depth_text depth3_text">3차메뉴</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li class="depth_item depth2_item">
+                                                    <a href="#n" target="_self" class="depth_text depth2_text">2차메뉴</a>
+                                                </li>
+                                                <li class="depth_item depth2_item">
+                                                    <a href="#n" target="_blank" title="새창" rel="noopener noreferrer"
+                                                        class="depth_text depth2_text">2차메뉴(새창)</a>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="depth_item depth1_item">
+                                    <a href="#n" target="_blank" title="새창" rel="noopener noreferrer"
+                                        class="depth_text depth1_text">1차메뉴(새창)</a>
+                                </li>
+                                <li class="depth_item depth1_item">
+                                    <a href="#n" target="_self" class="depth_text depth1_text">1차메뉴</a>
+                                </li>
+                                <li class="depth_item depth1_item">
+                                    <a href="#n" target="_self" class="depth_text depth1_text">1차메뉴</a>
+                                </li>
+                                <li class="depth_item depth1_item">
+                                    <a href="#n" target="_self" class="depth_text depth1_text">1차메뉴</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="menu_hide">
+                        <button type="button" class="menu_btn">주메뉴 닫기</button>
+                    </div>
+                </nav>
+
+            </div>
+
+        </header>
+
+
+        <div id="container">
+            <div class="rowgroup">
+                <div class="wrap">
+                    <!-- 480px 이하부터는 서브메뉴로 검색창 보여짐 -->
+                    <section class="search_wrap">
+                        <h2 class="skip">검색</h2>
+                        <div class="search_bar">
+                            <form id="search" action="" method="post" class="search_form">
+                                <fieldset class="search_fieldset">
+                                    <legend>검색</legend>
+                                    <span class="search_input">
+                                        <label for="search_query" class="search_label">통합검색</label>
+                                        <input type="search" placeholder="검색어를 입력해주세요." id="search_query"
+                                            class="search_query" name="query">
+                                    </span>
+                                    <a href="search.html" class="search_submit">검색</a>
+                                    <!--<input type="submit" class="search_submit" value="검색">-->
+                                </fieldset>
+                            </form>
+                        </div>
+                    </section>
+                    <section class="select">
+                        <div class="select_wrap">
+                            <h2 class="skip">선택</h2>
+                            <ul class="tab_list">
+                                <li class="tab_item n1 active">
+                                    <button class="tab_button" title="선택됨"><span>분류선택</span></button>
+                                </li>
+                                <li class="tab_item n2">
+                                    <button class="tab_button"><span>기관선택</span></button>
+                                </li>
+                            </ul>
+                            <div class="tab_cont">
+                                <div class="tab_panel n1 active" title="선택됨">
+                                    <div class="left">
+                                        <div class="area_wrap">
+                                            <div class="area_title">
+                                                <span>한눈에 보는 <em>성북구 통합예약</em></span>
+                                                <span>지도를 클릭하면 우리동네 교육/강좌가 한눈에!</span>
+                                            </div>
+                                            <div class="area_map">
+                                                <div class="map_wrap show18">
+                                                    <div class="map_img">
+                                                        <img src="/site/booking/images/main/area_map.png" alt="지도 이미지"
+                                                            usemap="#map">
+                                                            <map name="map">
+                                                                <area alt="성북동" title="성북동" coords="34,287,42,285,58,277,71,268,83,268,96,264,110,265,125,271,131,273,147,277,154,278,161,283,169,285,175,298,181,305,189,311,195,321,202,324,211,328,210,343,209,354,206,359,215,358,220,356,232,344,242,359,189,387,179,378,173,359,166,351,155,352,140,354,132,354,112,356,98,358,84,350,70,335,58,329,41,319,34,309,26,303" shape="poly" onmouseover="document.body.style.cursor='pointer';" onmouseout="document.body.style.cursor='default';">
+                                                                <area alt="정릉1동" title="정릉1동" coords="266,304,256,293,247,293,253,286,247,277,247,271,254,271,254,250,258,241,258,229,245,208,249,198,253,191,253,208,258,213,263,224,266,233,266,246,273,259,271,267,281,269,285,277,294,280,294,288,294,294,288,297,279,305" shape="poly" onmouseover="document.body.style.cursor='pointer';" onmouseout="document.body.style.cursor='default';">
+                                                                <area alt="돈암2동" title="돈암2동" coords="210,326,205,321,195,317,198,310,202,304,213,305,221,300,226,305,234,304,234,298,230,288,238,285,247,283,250,295,256,295,266,303,274,304,274,311,278,320,269,318,260,319,255,311,245,308,242,321,246,334,234,339,223,350,209,357,214,342" shape="poly" onmouseover="document.body.style.cursor='pointer';" onmouseout="document.body.style.cursor='default';">
+                                                                <area alt="정릉2동" title="정릉2동" coords="151,278,170,270,173,261,188,257,191,245,187,233,194,229,198,236,214,249,222,248,222,232,227,234,235,232,234,222,239,213,245,212,258,225,256,245,253,267,245,269,246,277,250,283,239,282,229,288,234,301,226,306,219,299,211,304,202,305,194,313,179,298,170,283" shape="poly" onmouseover="document.body.style.cursor='pointer';" onmouseout="document.body.style.cursor='default';">
+                                                                <area alt="동선동" title="동선동" coords="245,359,234,342,245,337,243,320,243,311,254,305,261,318,274,318,279,320,283,315,286,319,294,322,298,332,311,341,306,348,307,355,306,362,306,371,298,373,294,378,282,375,276,379,265,363,259,351" shape="poly" onmouseover="document.body.style.cursor='pointer';" onmouseout="document.body.style.cursor='default';">
+                                                                <area alt="돈암1동" title="돈암1동" coords="279,314,277,306,292,296,293,287,300,281,313,280,320,268,328,267,340,263,345,271,341,278,338,283,329,289,325,294,321,308,318,315,317,324,317,331,311,342,294,321" shape="poly" onmouseover="document.body.style.cursor='pointer';" onmouseout="document.body.style.cursor='default';">
+                                                                <area alt="길음1동" title="길음1동" coords="255,182,254,189,253,206,262,221,266,237,270,247,271,257,271,265,281,269,286,276,294,278,294,284,302,281,314,278,318,268,310,256,301,211,298,200,289,201,282,193,270,184" shape="poly" onmouseover="document.body.style.cursor='pointer';" onmouseout="document.body.style.cursor='default';">
+                                                                <area alt="길음2동" title="길음2동" coords="302,210,313,203,318,204,322,199,335,202,348,205,348,228,358,270,344,263,329,261,322,264,309,253" shape="poly" onmouseover="document.body.style.cursor='pointer';" onmouseout="document.body.style.cursor='default';">
+                                                                <area alt="종암동" title="종암동" coords="318,325,318,317,322,312,323,298,329,289,334,289,338,282,342,278,348,269,361,273,398,280,408,292,410,312,406,318,410,324,410,331,403,338,396,365,383,365,382,373,375,380,370,369,356,368,345,353,345,340,333,340" shape="poly" onmouseover="document.body.style.cursor='pointer';" onmouseout="document.body.style.cursor='default';">
+                                                                <area alt="삼선동" title="삼선동" coords="186,385,211,376,245,357,263,352,264,368,276,380,261,396,257,404,252,411,252,418,251,426,236,436,227,436,226,443,214,445,209,436,201,429,205,416,202,403,186,392,196,392" shape="poly" onmouseover="document.body.style.cursor='pointer';" onmouseout="document.body.style.cursor='default';">
+                                                                <area alt="보문동" title="보문동" coords="250,425,250,412,255,407,257,401,273,381,284,395,295,423,298,444,303,452,298,460,290,457,275,459,272,464,258,430" shape="poly" onmouseover="document.body.style.cursor='pointer';" onmouseout="document.body.style.cursor='default';">
+                                                                <area alt="안암동" title="안암동" coords="277,380,284,376,298,380,309,370,308,357,317,338,318,330,323,328,330,336,335,340,342,340,342,349,343,356,349,360,353,368,361,368,367,371,371,378,367,386,363,393,358,400,353,408,344,421,341,428,309,454,300,439,286,393" shape="poly" onmouseover="document.body.style.cursor='pointer';" onmouseout="document.body.style.cursor='default';">
+                                                                <area alt="월곡1동" title="월곡1동" coords="350,227,386,203,399,210,406,209,413,214,419,214,425,214,426,222,423,229,422,237,411,247,407,260,402,263,390,254,390,259,390,264,390,270,392,276,361,273" shape="poly" onmouseover="document.body.style.cursor='pointer';" onmouseout="document.body.style.cursor='default';">
+                                                                <area alt="월곡2동" title="월곡2동" coords="391,268,392,257,400,265,410,261,413,247,424,239,424,226,426,217,434,214,446,214,446,225,447,238,458,239,466,236,470,229,476,226,479,233,474,241,471,246,478,262,478,272,483,283,474,293,468,297,463,303,455,315,452,322,447,329,435,325,424,325,412,330,408,319,412,307,408,293" shape="poly" onmouseover="document.body.style.cursor='pointer';" onmouseout="document.body.style.cursor='default';">
+                                                                <area alt="장위1동" title="장위1동" coords="392,201,408,183,411,173,418,174,439,152,448,161,466,148,479,164,458,177,458,189,463,197,459,210,452,210,427,215,419,213,403,209" shape="poly" onmouseover="document.body.style.cursor='pointer';" onmouseout="document.body.style.cursor='default';">
+                                                                <area alt="장위3동" title="장위3동" coords="438,148,446,161,470,148,477,163,473,169,484,173,495,186,502,187,516,206,536,205,546,193,535,181,511,164,505,154,494,146,486,130,469,117,450,125" shape="poly" onmouseover="document.body.style.cursor='pointer';" onmouseout="document.body.style.cursor='default';">
+                                                                <area alt="장위2동" title="장위2동" coords="445,229,448,213,454,214,464,197,458,185,461,175,474,169,484,173,490,185,501,189,509,199,514,207,534,206,475,240,480,231,475,224,470,227,463,236,452,238" shape="poly" onmouseover="document.body.style.cursor='pointer';" onmouseout="document.body.style.cursor='default';">
+                                                                <area alt="석관동" title="석관동" coords="471,245,475,240,488,235,530,207,546,194,590,184,599,202,594,242,592,247,584,248,577,250,571,254,566,261,557,259,547,260,539,261,534,270,527,277,526,286,522,291,510,290,499,291,490,297,482,297,474,291,481,282,482,262" shape="poly" onmouseover="document.body.style.cursor='pointer';" onmouseout="document.body.style.cursor='default';">
+                                                                <area alt="정릉4동" title="정릉4동" coords="23,71,38,68,49,78,60,71,76,79,82,91,90,97,126,135,128,142,142,145,152,179,167,168,176,167,182,171,192,178,202,178,204,190,212,200,218,215,222,231,232,232,236,221,242,213,256,190,250,179,238,173,228,166,228,158,216,145,215,114,199,114,170,98,155,81,138,65,122,53,112,50,111,40,98,28,80,18,68,24,51,32,40,36,28,48,18,60,14,67" shape="poly" onmouseover="document.body.style.cursor='pointer';" onmouseout="document.body.style.cursor='default';">
+                                                                <area alt="정릉3동" title="정릉3동" coords="48,77,45,91,53,101,64,126,65,138,67,150,70,158,75,170,79,179,81,190,80,200,77,214,85,223,80,234,83,244,85,255,84,263,96,258,115,265,131,270,149,277,170,265,186,254,187,234,193,231,201,238,212,246,219,239,219,225,210,199,198,182,174,169,153,174,141,146,128,139,107,112,89,93,72,82,62,68" shape="poly" onmouseover="document.body.style.cursor='pointer';" onmouseout="document.body.style.cursor='default';">
+
+                                                                <!-- <area alt="성북동" title="성북동" coords="9,291,14,286,15,275,20,269,29,270,40,264,49,262,50,254,63,253,70,248,77,247,86,248,100,250,111,256,114,262,126,258,131,263,140,267,150,269,157,274,163,284,167,294,172,299,179,304,185,310,192,312,196,322,194,333,188,342,187,351,200,342,207,342,213,335,219,330,227,344,215,351,204,358,172,377,168,367,162,366,155,354,156,342,149,338,142,339,134,337,126,340,116,340,112,344,96,338,92,344,83,344,73,334,64,334,60,321,44,318,33,310,21,306,18,305,16,298" shape="poly" onmouseover="document.body.style.cursor='pointer';" onmouseout="document.body.style.cursor='default';">
+                                                                <area alt="정릉1동" title="정릉1동" coords="230,191,234,187,234,180,237,172,239,191,242,200,252,213,249,224,249,230,252,236,257,242,256,249,255,255,264,254,272,263,281,267,284,274,281,280,270,285,261,291,254,288,244,282,233,280,236,275,240,271,231,260,231,254,238,254,238,234,243,229,242,220,242,212,233,201" shape="poly" onmouseover="document.body.style.cursor='pointer';" onmouseout="document.body.style.cursor='default';">
+                                                                <area alt="돈암2동" title="돈암2동" coords="180,300,185,306,191,306,197,315,193,325,195,334,189,339,189,345,197,339,206,339,217,324,231,319,226,307,229,295,239,295,245,303,258,303,262,296,259,287,247,283,233,279,228,267,219,272,217,279,220,287,215,291,206,287,197,290,187,291" shape="poly" onmouseover="document.body.style.cursor='pointer';" onmouseout="document.body.style.cursor='default';">
+                                                                <area alt="정릉2동" title="정릉2동" coords="136,262,158,252,172,243,175,232,170,219,177,211,186,220,194,223,200,232,208,234,207,214,211,219,218,217,217,210,222,206,223,199,230,196,237,205,241,214,242,226,237,234,237,252,230,254,228,262,237,269,219,269,215,279,220,285,211,290,202,285,189,289,177,299,164,286,156,271" shape="poly" onmouseover="document.body.style.cursor='pointer';" onmouseout="document.body.style.cursor='default';">
+                                                                <area alt="동선동" title="동선동" coords="226,337,216,325,229,319,226,303,231,292,240,294,244,305,256,305,264,308,267,301,272,299,275,307,281,305,282,312,288,318,296,325,291,337,292,342,290,347,290,352,280,360,278,367,263,361,257,363,248,353,244,338,234,341" shape="poly" onmouseover="document.body.style.cursor='pointer';" onmouseout="document.body.style.cursor='default';">
+                                                                <area alt="돈암1동" title="돈암1동" coords="264,301,262,293,268,289,274,281,280,279,280,272,286,266,298,264,307,257,310,246,321,245,331,251,335,256,330,262,322,269,319,273,313,277,309,285,308,291,308,296,306,303,308,309,302,314,303,321,299,327,286,312,282,303,276,304,273,295" shape="poly" onmouseover="document.body.style.cursor='pointer';" onmouseout="document.body.style.cursor='default';">
+                                                                <area alt="길음1동" title="길음1동" coords="237,177,241,172,249,167,262,167,263,178,269,180,274,184,280,184,281,196,288,208,294,232,303,251,300,260,285,269,272,265,264,254,257,249,257,243,254,235,252,224,253,212,245,202,241,190" shape="poly" onmouseover="document.body.style.cursor='pointer';" onmouseout="document.body.style.cursor='default';">
+                                                                <area alt="길음2동" title="길음2동" coords="285,196,304,192,306,198,306,187,326,187,331,189,332,213,344,256,324,245,309,244,305,256,291,226" shape="poly" onmouseover="document.body.style.cursor='pointer';" onmouseout="document.body.style.cursor='default';">
+                                                                <area alt="종암동" title="종암동" coords="336,257,359,263,382,266,395,278,399,299,394,302,398,310,398,319,391,327,391,337,387,350,371,354,370,361,361,368,359,360,349,359,340,351,334,344,332,336,332,327,319,327,314,314,307,311,306,302,308,283,317,273,331,267" shape="poly" onmouseover="document.body.style.cursor='pointer';" onmouseout="document.body.style.cursor='default';">
+                                                                <area alt="삼선동" title="삼선동" coords="176,375,227,345,240,338,249,356,260,368,249,376,238,389,233,401,233,413,225,420,216,422,213,428,199,429,197,423,186,414,189,402,186,391,185,382,173,379,176,375" shape="poly" onmouseover="document.body.style.cursor='pointer';" onmouseout="document.body.style.cursor='default';">
+                                                                <area alt="보문동" title="보문동" coords="237,419,234,401,241,394,246,385,253,378,260,370,269,382,273,396,277,410,290,441,283,448,277,442,266,447,261,447,249,423,256,436" shape="poly" onmouseover="document.body.style.cursor='pointer';" onmouseout="document.body.style.cursor='default';">
+                                                                <area alt="안암동" title="안암동" coords="262,365,267,360,282,366,285,360,288,355,291,347,293,337,300,328,303,316,308,310,316,320,320,327,327,326,329,340,337,351,344,357,354,357,355,366,354,377,348,384,341,389,329,409,291,438,281,410,275,381" shape="poly" onmouseover="document.body.style.cursor='pointer';" onmouseout="document.body.style.cursor='default';">
+                                                                <area alt="월곡1동" title="월곡1동" coords="334,215,344,255,365,263,382,265,374,254,374,243,382,245,385,251,393,241,392,234,402,223,410,210,410,201,398,197,386,193,378,186" shape="poly" onmouseover="document.body.style.cursor='pointer';" onmouseout="document.body.style.cursor='default';">
+                                                                <area alt="월곡2동" title="월곡2동" coords="375,258,373,241,383,247,385,254,393,245,393,234,409,219,413,209,413,200,421,200,430,198,433,207,428,214,436,221,437,228,449,222,453,213,461,213,462,221,455,235,465,251,463,260,467,265,463,276,454,276,449,285,444,297,438,305,433,312,425,313,417,311,406,309,399,312,393,301,399,296,395,277" shape="poly" onmouseover="document.body.style.cursor='pointer';" onmouseout="document.body.style.cursor='default';">
+                                                                <area alt="장위1동" title="장위1동" coords="377,185,390,193,398,195,412,200,425,197,432,192,439,193,448,183,440,163,464,148,453,133,436,140,423,138,395,162" shape="poly" onmouseover="document.body.style.cursor='pointer';" onmouseout="document.body.style.cursor='default';">
+                                                                <area alt="장위3동" title="장위3동" coords="424,137,433,141,452,130,464,146,457,151,468,157,481,170,502,189,514,187,539,180,525,177,517,164,493,148,484,135,465,115,455,103,435,113" shape="poly" onmouseover="document.body.style.cursor='pointer';" onmouseout="document.body.style.cursor='default';">
+                                                                <area alt="장위2동" title="장위2동" coords="430,195,439,197,449,186,444,161,458,152,471,158,480,170,495,184,504,193,519,188,460,225,467,213,455,212,447,219,437,222,430,213,434,203" shape="poly" onmouseover="document.body.style.cursor='pointer';" onmouseout="document.body.style.cursor='default';">
+                                                                <area alt="석관동" title="석관동" coords="463,223,529,181,574,172,585,186,581,227,574,233,565,233,558,235,554,240,549,245,538,245,528,245,522,248,516,257,510,267,513,276,504,279,494,272,482,273,478,280,465,281,463,270,463,251,455,230" shape="poly" onmouseover="document.body.style.cursor='pointer';" onmouseout="document.body.style.cursor='default';">
+                                                                <area alt="정릉4동" title="정릉4동" coords="34,59,44,53,57,61,61,73,83,89,107,108,112,121,124,125,135,156,141,159,155,151,166,155,183,160,185,172,194,185,202,201,205,205,213,216,221,205,224,192,233,184,230,170,236,166,223,154,214,148,197,128,199,97,177,95,168,85,156,80,141,61,124,49,115,37,100,30,87,20,69,10,60,1,46,4,43,10,31,12,21,17,15,24,7,31,4,38,4,48,8,54,26,53" shape="poly" onmouseover="document.body.style.cursor='pointer';" onmouseout="document.body.style.cursor='default';">
+                                                                <area alt="정릉3동" title="정릉3동" coords="33,76,37,66,46,55,60,63,63,75,91,96,109,115,115,122,124,126,136,158,143,164,155,153,170,157,183,163,189,174,194,189,202,205,206,216,204,229,183,215,175,215,171,219,173,233,169,241,157,247,136,260,120,256,93,244,75,242,69,233,67,220,73,210,65,199,64,186,70,171,56,155,47,129,53,121" shape="poly" onmouseover="document.body.style.cursor='pointer';" onmouseout="document.body.style.cursor='default';"> -->
+                                                            </map>
+                                                    </div>
+                                                    <div class="map_btn n01">
+                                                        <button type="button">
+                                                            <span class="dong">성북동</span>
+                                                            <span class="map_num">2</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="map_btn n02">
+                                                        <button type="button">
+                                                            <span class="dong">정릉1동</span>
+                                                            <span class="map_num">3</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="map_btn n03">
+                                                        <button type="button">
+                                                            <span class="dong">돈암2동</span>
+                                                            <span class="map_num">4</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="map_btn n04">
+                                                        <button type="button">
+                                                            <span class="dong">정릉2동</span>
+                                                            <span class="map_num">4</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="map_btn n05">
+                                                        <button type="button">
+                                                            <span class="dong">동선동</span>
+                                                            <span class="map_num">5</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="map_btn n06">
+                                                        <button type="button">
+                                                            <span class="dong">돈암1동</span>
+                                                            <span class="map_num">3</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="map_btn n07">
+                                                        <button type="button">
+                                                            <span class="dong">길음1동</span>
+                                                            <span class="map_num">3</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="map_btn n08">
+                                                        <button type="button">
+                                                            <span class="dong">길음2동</span>
+                                                            <span class="map_num">5</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="map_btn n09">
+                                                        <button type="button">
+                                                            <span class="dong">종암동</span>
+                                                            <span class="map_num">2</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="map_btn n10">
+                                                        <button type="button">
+                                                            <span class="dong">삼선동</span>
+                                                            <span class="map_num">6</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="map_btn n11">
+                                                        <button type="button">
+                                                            <span class="dong">보문동</span>
+                                                            <span class="map_num">7</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="map_btn n12">
+                                                        <button type="button">
+                                                            <span class="dong">안암동</span>
+                                                            <span class="map_num">10</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="map_btn n13">
+                                                        <button type="button">
+                                                            <span class="dong">월곡1동</span>
+                                                            <span class="map_num">3</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="map_btn n14">
+                                                        <button type="button">
+                                                            <span class="dong">월곡2동</span>
+                                                            <span class="map_num">3</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="map_btn n15">
+                                                        <button type="button">
+                                                            <span class="dong">장위1동</span>
+                                                            <span class="map_num">5</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="map_btn n16">
+                                                        <button type="button">
+                                                            <span class="dong">장위3동</span>
+                                                            <span class="map_num">2</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="map_btn n17">
+                                                        <button type="button">
+                                                            <span class="dong">장위2동</span>
+                                                            <span class="map_num">6</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="map_btn n18">
+                                                        <button type="button">
+                                                            <span class="dong">석관동</span>
+                                                            <span class="map_num">5</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="map_btn n19 active">
+                                                        <button type="button">
+                                                            <span class="dong">정릉4동</span>
+                                                            <span class="map_num">11</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="map_btn n20">
+                                                        <button type="button">
+                                                            <span class="dong">정릉3동</span>
+                                                            <span class="map_num">3</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                    
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <div class="category">
+                                            <ul class="category_list">
+                                                <li class="category_itm">
+                                                    <input type="checkbox" id="ct1" name="categorySelect" value="1">
+                                                    <label for="ct1" class="category_label"><span class="ct_tit">교육/강좌</span></label>
+                                                </li>
+                                                <li class="category_itm">
+                                                    <input type="checkbox" id="ct2" name="categorySelect" value="2">
+                                                    <label for="ct2" class="category_label"><span class="ct_tit">대관/시설</span></label>
+                                                </li>
+                                                <li class="category_itm">
+                                                    <input type="checkbox" id="ct3" name="categorySelect" value="3">
+                                                    <label for="ct3" class="category_label"><span class="ct_tit">체험/대여</span></label>
+                                                </li>
+                                                <li class="category_itm">
+                                                    <input type="checkbox" id="ct4" name="categorySelect" value="4">
+                                                    <label for="ct4" class="category_label"><span class="ct_tit">신청</span></label>
+                                                </li>
+                                                <li class="category_itm">
+                                                    <input type="checkbox" id="ct5" name="categorySelect" value="5">
+                                                    <label for="ct5" class="category_label"><span class="ct_tit">행사접수</span></label>
+                                                </li>
+                                            </ul>
+                                            <div class="category_reset">
+                                                <button class="reset_btn">
+                                                    초기화
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="programs">
+                                            <ul class="program_list">
+                                                <!--
+                                                각각 data-type 넣어주세요.
+                                                접수중 : type1,
+                                                접수마감 : type2
+                                                -->
+                    
+                                                <li class="program_itm" data-type="type1">
+                                                    <a href="#" class="program_anchor">
+                                                        <div class="infos">
+                                                            <div class="info_itm n1">
+                                                                <span>평생학습관</span>
+                                                            </div>
+                                                            <div class="info_itm n2">
+                                                                <span>시민교육</span>
+                                                            </div>
+                                                            <div class="info_itm n3">
+                                                                <span><em class="application">30</em>/45</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="program_text">
+                                                            <div class="p_left">
+                                                                <div class="title_wrap"><span class="title">2024 상반기 성북열린시민대학 수강생모집</span></div>
+                                                                <div class="des_wrap"><span class="date">2024.03.06 ~ 2024.07.06</span><span class="location">성북구평생학습관 </span></div>
+                                                            </div>
+                                                            <div class="p_right">
+                                                                <div class="type">
+                                                                    <span>접수중</span>
+                                                                    <span class="arrow_btn"></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                
+                                                <li class="program_itm" data-type="type1">
+                                                    <a href="#" class="program_anchor">
+                                                        <div class="infos">
+                                                            <div class="info_itm n1">
+                                                                <span>평생학습관</span>
+                                                            </div>
+                                                            <div class="info_itm n2">
+                                                                <span>시민교육</span>
+                                                            </div>
+                                                            <div class="info_itm n3">
+                                                                <span><em class="application">30</em>/45</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="program_text">
+                                                            <div class="p_left">
+                                                                <div class="title_wrap"><span class="title">2024 상반기 성북열린시민대학 수강생모집</span></div>
+                                                                <div class="des_wrap"><span class="date">2024.03.06 ~ 2024.07.06</span><span class="location">성북구평생학습관 </span></div>
+                                                            </div>
+                                                            <div class="p_right">
+                                                                <div class="type">
+                                                                    <span>접수중</span>
+                                                                    <span class="arrow_btn"></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                    
+                                                <li class="program_itm" data-type="type1">
+                                                    <a href="#" class="program_anchor">
+                                                        <div class="infos">
+                                                            <div class="info_itm n1">
+                                                                <span>평생학습관</span>
+                                                            </div>
+                                                            <div class="info_itm n2">
+                                                                <span>시민교육</span>
+                                                            </div>
+                                                            <div class="info_itm n3">
+                                                                <span><em class="application">30</em>/45</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="program_text">
+                                                            <div class="p_left">
+                                                                <div class="title_wrap"><span class="title">2024 상반기 성북열린시민대학 수강생모집</span></div>
+                                                                <div class="des_wrap"><span class="date">2024.03.06 ~ 2024.07.06</span><span class="location">성북구평생학습관 </span></div>
+                                                            </div>
+                                                            <div class="p_right">
+                                                                <div class="type">
+                                                                    <span>접수중</span>
+                                                                    <span class="arrow_btn"></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                    
+                                                <li class="program_itm" data-type="type1">
+                                                    <a href="#" class="program_anchor">
+                                                        <div class="infos">
+                                                            <div class="info_itm n1">
+                                                                <span>평생학습관</span>
+                                                            </div>
+                                                            <div class="info_itm n2">
+                                                                <span>시민교육</span>
+                                                            </div>
+                                                            <div class="info_itm n3">
+                                                                <span><em class="application">30</em>/45</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="program_text">
+                                                            <div class="p_left">
+                                                                <div class="title_wrap"><span class="title">2024 상반기 성북열린시민대학 수강생모집</span></div>
+                                                                <div class="des_wrap"><span class="date">2024.03.06 ~ 2024.07.06</span><span class="location">성북구평생학습관 </span></div>
+                                                            </div>
+                                                            <div class="p_right">
+                                                                <div class="type">
+                                                                    <span>접수중</span>
+                                                                    <span class="arrow_btn"></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                    
+                                                <li class="program_itm" data-type="type1">
+                                                    <a href="#" class="program_anchor">
+                                                        <div class="infos">
+                                                            <div class="info_itm n1">
+                                                                <span>평생학습관</span>
+                                                            </div>
+                                                            <div class="info_itm n2">
+                                                                <span>시민교육</span>
+                                                            </div>
+                                                            <div class="info_itm n3">
+                                                                <span><em class="application">30</em>/45</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="program_text">
+                                                            <div class="p_left">
+                                                                <div class="title_wrap"><span class="title">2024 상반기 성북열린시민대학 수강생모집</span></div>
+                                                                <div class="des_wrap"><span class="date">2024.03.06 ~ 2024.07.06</span><span class="location">성북구평생학습관 </span></div>
+                                                            </div>
+                                                            <div class="p_right">
+                                                                <div class="type">
+                                                                    <span>접수중</span>
+                                                                    <span class="arrow_btn"></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                    
+                                                <li class="program_itm" data-type="type1">
+                                                    <a href="#" class="program_anchor">
+                                                        <div class="infos">
+                                                            <div class="info_itm n1">
+                                                                <span>평생학습관</span>
+                                                            </div>
+                                                            <div class="info_itm n2">
+                                                                <span>시민교육</span>
+                                                            </div>
+                                                            <div class="info_itm n3">
+                                                                <span><em class="application">30</em>/45</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="program_text">
+                                                            <div class="p_left">
+                                                                <div class="title_wrap"><span class="title">2024 상반기 성북열린시민대학 수강생모집</span></div>
+                                                                <div class="des_wrap"><span class="date">2024.03.06 ~ 2024.07.06</span><span class="location">성북구평생학습관 </span></div>
+                                                            </div>
+                                                            <div class="p_right">
+                                                                <div class="type">
+                                                                    <span>접수중</span>
+                                                                    <span class="arrow_btn"></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="programs_more">
+                                            <a href="#" class="more_btn">전체보기  +</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab_panel n2">
+                                    <div class="left">
+                                        <div class="institution_wrap">
+                                            <div class="institution_title">
+                                                <span>한눈에 보는 <em>성북구 통합예약</em></span>
+                                            </div>
+                                            <div class="institution_search">
+                                                <span>기관선택</span>
+                                            </div>
+                                            <div class="institution_box">
+                                                <div class="institution_list">
+                                                    <div class="institution_itm">
+                                                        <input type="checkbox" id="it1" name="institutionSelect" value="1">
+                                                        <label for="it1" class="institution_label"><span class="it_tit">사회적경제센터</span></label>
+                                                    </div>
+                                                    <div class="institution_itm">
+                                                        <input type="checkbox" id="it2" name="institutionSelect" value="2">
+                                                        <label for="it2" class="institution_label"><span class="it_tit">온가족행복망</span></label>
+                                                    </div>
+                                                    <div class="institution_itm">
+                                                        <input type="checkbox" id="it3" name="institutionSelect" value="3">
+                                                        <label for="it3" class="institution_label"><span class="it_tit">도시관리공단</span></label>
+                                                    </div>
+                                                    <div class="institution_itm">
+                                                        <input type="checkbox" id="it4" name="institutionSelect" value="4">
+                                                        <label for="it4" class="institution_label"><span class="it_tit">50플러스센터</span></label>
+                                                    </div>
+                                                    <div class="institution_itm">
+                                                        <input type="checkbox" id="it5" name="institutionSelect" value="5">
+                                                        <label for="it5" class="institution_label"><span class="it_tit">육아종합지원센터</span></label>
+                                                    </div>
+                                                    <div class="institution_itm">
+                                                        <input type="checkbox" id="it6" name="institutionSelect" value="6">
+                                                        <label for="it6" class="institution_label"><span class="it_tit">문화재단</span></label>
+                                                    </div>
+                                                    <div class="institution_itm">
+                                                        <input type="checkbox" id="it7" name="institutionSelect" value="7">
+                                                        <label for="it7" class="institution_label"><span class="it_tit">마을미디어지원센터</span></label>
+                                                    </div>
+                                                    <div class="institution_itm">
+                                                        <input type="checkbox" id="it8" name="institutionSelect" value="8">
+                                                        <label for="it8" class="institution_label"><span class="it_tit">사회적경제센터</span></label>
+                                                    </div>
+                                                    <div class="institution_itm">
+                                                        <input type="checkbox" id="it9" name="institutionSelect" value="9">
+                                                        <label for="it9" class="institution_label"><span class="it_tit">여성취업교육샌터</span></label>
+                                                    </div>
+                                                    <div class="institution_itm">
+                                                        <input type="checkbox" id="it10" name="institutionSelect" value="10">
+                                                        <label for="it10" class="institution_label"><span class="it_tit">사회적경제센터</span></label>
+                                                    </div>
+
+                                                    <div class="institution_itm">
+                                                        <input type="checkbox" id="it11" name="institutionSelect" value="11">
+                                                        <label for="it11" class="institution_label"><span class="it_tit">사회적경제센터</span></label>
+                                                    </div>
+
+                                                    <div class="institution_itm">
+                                                        <input type="checkbox" id="it12" name="institutionSelect" value="12">
+                                                        <label for="it12" class="institution_label"><span class="it_tit">사회적경제센터</span></label>
+                                                    </div>
+                                                    <div class="institution_itm">
+                                                        <input type="checkbox" id="it13" name="institutionSelect" value="13">
+                                                        <label for="it13" class="institution_label"><span class="it_tit">사회적경제센터</span></label>
+                                                    </div>
+                                                </div>
+                                                <div class="institution_control">
+                                                    <button type="button" class="institution_btn institution_prev">이전보기</button>
+                                                    <!-- <span class="institution_count">
+                                                        <span class="institution_current">1</span> / <span class="institution_total">2</span>
+                                                    </span> -->
+                                                    <button type="button" class="institution_btn institution_next">다음보기</button>
+                                                </div>
+                                                <div class="institution_btns">
+                                                    <div class="institution_all">
+                                                        <input id="All" class="instAll" type="checkbox" name="institutionSelectAll" value="All">
+                                                        <label id="allBtn" for="All" class="All"><span class="it_all">전체선택</span></label>
+                                                    </div>
+                                                    <div class="institution_reset">
+                                                        <button class="reset_btn"><span>초기화</span></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <div class="choice">
+                                            <div class="choice_box">
+                                                <span>좌측에서 기관을 선택하세요.</span>
+                                                <span>위에서 기관을 선택하세요.</span>
+                                            </div>
+                                        </div>
+                                        <div class="programs">
+                                            <ul class="program_list">
+                                                <!--
+                                                각각 data-type 넣어주세요.
+                                                접수중 : type1,
+                                                접수마감 : type2
+                                                -->
+                    
+                                                <li class="program_itm" data-type="type1">
+                                                    <a href="#" class="program_anchor">
+                                                        <div class="infos">
+                                                            <div class="info_itm n1">
+                                                                <span>평생학습관</span>
+                                                            </div>
+                                                            <div class="info_itm n2">
+                                                                <span>시민교육</span>
+                                                            </div>
+                                                            <div class="info_itm n3">
+                                                                <span><em class="application">30</em>/45</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="program_text">
+                                                            <div class="p_left">
+                                                                <div class="title_wrap"><span class="title">2024 상반기 성북열린시민대학 수강생모집</span></div>
+                                                                <div class="des_wrap"><span class="date">2024.03.06 ~ 2024.07.06</span><span class="location">성북구평생학습관 </span></div>
+                                                            </div>
+                                                            <div class="p_right">
+                                                                <div class="type">
+                                                                    <span>접수중</span>
+                                                                    <span class="arrow_btn"></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="program_itm" data-type="type1">
+                                                    <a href="#" class="program_anchor">
+                                                        <div class="infos">
+                                                            <div class="info_itm n1">
+                                                                <span>평생학습관</span>
+                                                            </div>
+                                                            <div class="info_itm n2">
+                                                                <span>시민교육</span>
+                                                            </div>
+                                                            <div class="info_itm n3">
+                                                                <span><em class="application">30</em>/45</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="program_text">
+                                                            <div class="p_left">
+                                                                <div class="title_wrap"><span class="title">2024 상반기 성북열린시민대학 수강생모집</span></div>
+                                                                <div class="des_wrap"><span class="date">2024.03.06 ~ 2024.07.06</span><span class="location">성북구평생학습관 </span></div>
+                                                            </div>
+                                                            <div class="p_right">
+                                                                <div class="type">
+                                                                    <span>접수중</span>
+                                                                    <span class="arrow_btn"></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                    
+                                                <li class="program_itm" data-type="type1">
+                                                    <a href="#" class="program_anchor">
+                                                        <div class="infos">
+                                                            <div class="info_itm n1">
+                                                                <span>평생학습관</span>
+                                                            </div>
+                                                            <div class="info_itm n2">
+                                                                <span>시민교육</span>
+                                                            </div>
+                                                            <div class="info_itm n3">
+                                                                <span><em class="application">30</em>/45</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="program_text">
+                                                            <div class="p_left">
+                                                                <div class="title_wrap"><span class="title">2024 상반기 성북열린시민대학 수강생모집</span></div>
+                                                                <div class="des_wrap"><span class="date">2024.03.06 ~ 2024.07.06</span><span class="location">성북구평생학습관 </span></div>
+                                                            </div>
+                                                            <div class="p_right">
+                                                                <div class="type">
+                                                                    <span>접수중</span>
+                                                                    <span class="arrow_btn"></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                    
+                                                <li class="program_itm" data-type="type1">
+                                                    <a href="#" class="program_anchor">
+                                                        <div class="infos">
+                                                            <div class="info_itm n1">
+                                                                <span>평생학습관</span>
+                                                            </div>
+                                                            <div class="info_itm n2">
+                                                                <span>시민교육</span>
+                                                            </div>
+                                                            <div class="info_itm n3">
+                                                                <span><em class="application">30</em>/45</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="program_text">
+                                                            <div class="p_left">
+                                                                <div class="title_wrap"><span class="title">2024 상반기 성북열린시민대학 수강생모집</span></div>
+                                                                <div class="des_wrap"><span class="date">2024.03.06 ~ 2024.07.06</span><span class="location">성북구평생학습관 </span></div>
+                                                            </div>
+                                                            <div class="p_right">
+                                                                <div class="type">
+                                                                    <span>접수중</span>
+                                                                    <span class="arrow_btn"></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                    
+                                                <li class="program_itm" data-type="type1">
+                                                    <a href="#" class="program_anchor">
+                                                        <div class="infos">
+                                                            <div class="info_itm n1">
+                                                                <span>평생학습관</span>
+                                                            </div>
+                                                            <div class="info_itm n2">
+                                                                <span>시민교육</span>
+                                                            </div>
+                                                            <div class="info_itm n3">
+                                                                <span><em class="application">30</em>/45</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="program_text">
+                                                            <div class="p_left">
+                                                                <div class="title_wrap"><span class="title">2024 상반기 성북열린시민대학 수강생모집</span></div>
+                                                                <div class="des_wrap"><span class="date">2024.03.06 ~ 2024.07.06</span><span class="location">성북구평생학습관 </span></div>
+                                                            </div>
+                                                            <div class="p_right">
+                                                                <div class="type">
+                                                                    <span>접수중</span>
+                                                                    <span class="arrow_btn"></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                    
+                                                <li class="program_itm" data-type="type1">
+                                                    <a href="#" class="program_anchor">
+                                                        <div class="infos">
+                                                            <div class="info_itm n1">
+                                                                <span>평생학습관</span>
+                                                            </div>
+                                                            <div class="info_itm n2">
+                                                                <span>시민교육</span>
+                                                            </div>
+                                                            <div class="info_itm n3">
+                                                                <span><em class="application">30</em>/45</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="program_text">
+                                                            <div class="p_left">
+                                                                <div class="title_wrap"><span class="title">2024 상반기 성북열린시민대학 수강생모집</span></div>
+                                                                <div class="des_wrap"><span class="date">2024.03.06 ~ 2024.07.06</span><span class="location">성북구평생학습관 </span></div>
+                                                            </div>
+                                                            <div class="p_right">
+                                                                <div class="type">
+                                                                    <span>접수중</span>
+                                                                    <span class="arrow_btn"></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="programs_more">
+                                            <a href="#" class="more_btn">전체보기  +</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="rowgroup2">
+                <div class="wrap">
+                    <section class="state">
+                        <h2 class="state_title">운영중인 강좌현황</h2>
+                        <div class="state_box">
+                            <div class="tab_list">
+                                <div class="tab_itm active"><button class="tab_btn thumbnail active">썸네일 보기</button></div>
+                                <div class="tab_itm"><button class="tab_btn list">리스트 보기</button></div>
+                            </div>
+                            <div class="tab_cont">
+                                <div class="cont_pannel thumbnail active">
+                                    <div class="array_btns">
+                                        <div class="btn_wrap"><button class="array_btn recent active">최신순</button></div>
+                                        <div class="btn_wrap"><button class="array_btn popular">인기순</button></div>
+                                    </div>
+                                    <div class="thumbnail_list">
+                                        <div class="thumbnail_itm">
+                                            <a href="" class="thumbnail_anchor">
+                                                <div class="thumbnail_img">
+                                                    <div class="top_text">
+                                                        <span class="text_category">교육·강좌</span>
+                                                        <span class="text_state">접수중</span>
+                                                    </div>
+                                                    <div class="img_wrap">
+                                                        <img src="../booking/images/main/card_img02.png" alt="">
+                                                    </div>
+                                                    <div class="bottom_text">
+                                                        <span>무료</span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="thumbnail_info">
+                                                    <div class="info_title">
+                                                        <span>장장위석관보건지소 9월 영유아
+                                                            모성 프로그램 신청 
+                                                            <span class="new" title="새글">N</span>
+                                                        </span>
+                                                    </div>
+                                                    <ul class="info_list">
+                                                        <li class="info_itm">
+                                                            <span class="itm_division n1">신청정원</span>
+                                                            <span class="itm_des"><em class="application">10</em>/123</span>
+                                                        </li>
+                                                        <li class="info_itm">
+                                                            <span class="itm_division n2">장 소</span>
+                                                            <span class="itm_des">성북구청교육센터</span>
+                                                        </li>
+                                                        <li class="info_itm">
+                                                            <span class="itm_division n3">대 상</span>
+                                                            <span class="itm_des">청소년</span>
+                                                        </li>
+                                                        <li class="info_itm">
+                                                            <span class="itm_division n4">모집기간</span>
+                                                            <span class="itm_des">2024-04-16 ~ 2024-04-25</span>
+                                                        </li>
+                                                        <li class="info_itm">
+                                                            <span class="itm_division n5">교육기간</span>
+                                                            <span class="itm_des">2024-04-16 ~ 2024-04-25</span>
+                                                        </li>
+                                                    </ul>
+                                                    <a class="info_detail btn" href="$">
+                                                        <span>상세보기</span>
+                                                    </a>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="thumbnail_itm">
+                                            <a href="" class="thumbnail_anchor">
+                                                <div class="thumbnail_img">
+                                                    <div class="top_text">
+                                                        <span class="text_category">교육·강좌</span>
+                                                        <span class="text_state">접수중</span>
+                                                    </div>
+                                                    <div class="img_wrap">
+                                                        <img src="../booking/images/main/card_img01.png" alt="">
+                                                    </div>
+                                                    <div class="bottom_text">
+                                                        <span>무료</span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="thumbnail_info">
+                                                    <div class="info_title">
+                                                        <span>장장위석관보건지소 9월 영유아
+                                                            모성 프로그램 신청 
+                                                            <span class="new" title="새글">N</span>
+                                                        </span>
+                                                    </div>
+                                                    <ul class="info_list">
+                                                        <li class="info_itm">
+                                                            <span class="itm_division n1">신청정원</span>
+                                                            <span class="itm_des"><em class="application">10</em>/123</span>
+                                                        </li>
+                                                        <li class="info_itm">
+                                                            <span class="itm_division n2">장 소</span>
+                                                            <span class="itm_des">성북구청교육센터</span>
+                                                        </li>
+                                                        <li class="info_itm">
+                                                            <span class="itm_division n3">대 상</span>
+                                                            <span class="itm_des">청소년</span>
+                                                        </li>
+                                                        <li class="info_itm">
+                                                            <span class="itm_division n4">모집기간</span>
+                                                            <span class="itm_des">2024-04-16 ~ 2024-04-25</span>
+                                                        </li>
+                                                        <li class="info_itm">
+                                                            <span class="itm_division n5">교육기간</span>
+                                                            <span class="itm_des">2024-04-16 ~ 2024-04-25</span>
+                                                        </li>
+                                                    </ul>
+                                                    <a class="info_detail btn" href="$">
+                                                        <span>상세보기</span>
+                                                    </a>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="thumbnail_itm">
+                                            <a href="" class="thumbnail_anchor">
+                                                <div class="thumbnail_img">
+                                                    <div class="top_text">
+                                                        <span class="text_category">교육·강좌</span>
+                                                        <span class="text_state">접수중</span>
+                                                    </div>
+                                                    <div class="img_wrap">
+                                                        <img src="../booking/images/main/card_img02.png" alt="">
+                                                    </div>
+                                                    <div class="bottom_text">
+                                                        <span>무료</span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="thumbnail_info">
+                                                    <div class="info_title">
+                                                        <span>장장위석관보건지소 9월 영유아
+                                                            모성 프로그램 신청 
+                                                            <span class="new" title="새글">N</span>
+                                                        </span>
+                                                    </div>
+                                                    <ul class="info_list">
+                                                        <li class="info_itm">
+                                                            <span class="itm_division n1">신청정원</span>
+                                                            <span class="itm_des"><em class="application">10</em>/123</span>
+                                                        </li>
+                                                        <li class="info_itm">
+                                                            <span class="itm_division n2">장 소</span>
+                                                            <span class="itm_des">성북구청교육센터</span>
+                                                        </li>
+                                                        <li class="info_itm">
+                                                            <span class="itm_division n3">대 상</span>
+                                                            <span class="itm_des">청소년</span>
+                                                        </li>
+                                                        <li class="info_itm">
+                                                            <span class="itm_division n4">모집기간</span>
+                                                            <span class="itm_des">2024-04-16 ~ 2024-04-25</span>
+                                                        </li>
+                                                        <li class="info_itm">
+                                                            <span class="itm_division n5">교육기간</span>
+                                                            <span class="itm_des">2024-04-16 ~ 2024-04-25</span>
+                                                        </li>
+                                                    </ul>
+                                                    <a class="info_detail btn" href="$">
+                                                        <span>상세보기</span>
+                                                    </a>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="thumbnail_itm">
+                                            <a href="" class="thumbnail_anchor">
+                                                <div class="thumbnail_img">
+                                                    <div class="top_text">
+                                                        <span class="text_category">교육·강좌</span>
+                                                        <span class="text_state">접수중</span>
+                                                    </div>
+                                                    <div class="img_wrap">
+                                                        <img src="../booking/images/main/card_img01.png" alt="">
+                                                    </div>
+                                                    <div class="bottom_text">
+                                                        <span>무료</span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="thumbnail_info">
+                                                    <div class="info_title">
+                                                        <span>장장위석관보건지소 9월 영유아
+                                                            모성 프로그램 신청 
+                                                        </span>
+                                                    </div>
+                                                    <ul class="info_list">
+                                                        <li class="info_itm">
+                                                            <span class="itm_division n1">신청정원</span>
+                                                            <span class="itm_des"><em class="application">10</em>/123</span>
+                                                        </li>
+                                                        <li class="info_itm">
+                                                            <span class="itm_division n2">장 소</span>
+                                                            <span class="itm_des">성북구청교육센터</span>
+                                                        </li>
+                                                        <li class="info_itm">
+                                                            <span class="itm_division n3">대 상</span>
+                                                            <span class="itm_des">청소년</span>
+                                                        </li>
+                                                        <li class="info_itm">
+                                                            <span class="itm_division n4">모집기간</span>
+                                                            <span class="itm_des">2024-04-16 ~ 2024-04-25</span>
+                                                        </li>
+                                                        <li class="info_itm">
+                                                            <span class="itm_division n5">교육기간</span>
+                                                            <span class="itm_des">2024-04-16 ~ 2024-04-25</span>
+                                                        </li>
+                                                    </ul>
+                                                    <a class="info_detail btn" href="$">
+                                                        <span>상세보기</span>
+                                                    </a>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="thumbnail_itm">
+                                            <a href="" class="thumbnail_anchor">
+                                                <div class="thumbnail_img">
+                                                    <div class="top_text">
+                                                        <span class="text_category">교육·강좌</span>
+                                                        <span class="text_state">접수중</span>
+                                                    </div>
+                                                    <div class="img_wrap">
+                                                        <img src="../booking/images/main/card_img02.png" alt="">
+                                                    </div>
+                                                    <div class="bottom_text">
+                                                        <span>무료</span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="thumbnail_info">
+                                                    <div class="info_title">
+                                                        <span>장장위석관보건지소 9월 영유아
+                                                            모성 프로그램 신청 
+                                                        </span>
+                                                    </div>
+                                                    <ul class="info_list">
+                                                        <li class="info_itm">
+                                                            <span class="itm_division n1">신청정원</span>
+                                                            <span class="itm_des"><em class="application">10</em>/123</span>
+                                                        </li>
+                                                        <li class="info_itm">
+                                                            <span class="itm_division n2">장 소</span>
+                                                            <span class="itm_des">성북구청교육센터</span>
+                                                        </li>
+                                                        <li class="info_itm">
+                                                            <span class="itm_division n3">대 상</span>
+                                                            <span class="itm_des">청소년</span>
+                                                        </li>
+                                                        <li class="info_itm">
+                                                            <span class="itm_division n4">모집기간</span>
+                                                            <span class="itm_des">2024-04-16 ~ 2024-04-25</span>
+                                                        </li>
+                                                        <li class="info_itm">
+                                                            <span class="itm_division n5">교육기간</span>
+                                                            <span class="itm_des">2024-04-16 ~ 2024-04-25</span>
+                                                        </li>
+                                                    </ul>
+                                                    <a class="info_detail btn" href="$">
+                                                        <span>상세보기</span>
+                                                    </a>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="thumbnail_itm">
+                                            <a href="" class="thumbnail_anchor">
+                                                <div class="thumbnail_img">
+                                                    <div class="top_text">
+                                                        <span class="text_category">교육·강좌</span>
+                                                        <span class="text_state">접수중</span>
+                                                    </div>
+                                                    <div class="img_wrap">
+                                                        <img src="../booking/images/main/card_img02.png" alt="">
+                                                    </div>
+                                                    <div class="bottom_text">
+                                                        <span>무료</span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="thumbnail_info">
+                                                    <div class="info_title">
+                                                        <span>장장위석관보건지소 9월 영유아
+                                                            모성 프로그램 신청 
+                                                        </span>
+                                                    </div>
+                                                    <ul class="info_list">
+                                                        <li class="info_itm">
+                                                            <span class="itm_division n1">신청정원</span>
+                                                            <span class="itm_des"><em class="application">10</em>/123</span>
+                                                        </li>
+                                                        <li class="info_itm">
+                                                            <span class="itm_division n2">장 소</span>
+                                                            <span class="itm_des">성북구청교육센터</span>
+                                                        </li>
+                                                        <li class="info_itm">
+                                                            <span class="itm_division n3">대 상</span>
+                                                            <span class="itm_des">청소년</span>
+                                                        </li>
+                                                        <li class="info_itm">
+                                                            <span class="itm_division n4">모집기간</span>
+                                                            <span class="itm_des">2024-04-16 ~ 2024-04-25</span>
+                                                        </li>
+                                                        <li class="info_itm">
+                                                            <span class="itm_division n5">교육기간</span>
+                                                            <span class="itm_des">2024-04-16 ~ 2024-04-25</span>
+                                                        </li>
+                                                    </ul>
+                                                    <a class="info_detail btn" href="$">
+                                                        <span>상세보기</span>
+                                                    </a>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="thumbnail_itm">
+                                            <a href="" class="thumbnail_anchor">
+                                                <div class="thumbnail_img">
+                                                    <div class="top_text">
+                                                        <span class="text_category">교육·강좌</span>
+                                                        <span class="text_state">접수중</span>
+                                                    </div>
+                                                    <div class="img_wrap">
+                                                        <img src="../booking/images/main/card_img02.png" alt="">
+                                                    </div>
+                                                    <div class="bottom_text">
+                                                        <span>무료</span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="thumbnail_info">
+                                                    <div class="info_title">
+                                                        <span>장장위석관보건지소 9월 영유아
+                                                            모성 프로그램 신청 
+                                                        </span>
+                                                    </div>
+                                                    <ul class="info_list">
+                                                        <li class="info_itm">
+                                                            <span class="itm_division n1">신청정원</span>
+                                                            <span class="itm_des"><em class="application">10</em>/123</span>
+                                                        </li>
+                                                        <li class="info_itm">
+                                                            <span class="itm_division n2">장 소</span>
+                                                            <span class="itm_des">성북구청교육센터</span>
+                                                        </li>
+                                                        <li class="info_itm">
+                                                            <span class="itm_division n3">대 상</span>
+                                                            <span class="itm_des">청소년</span>
+                                                        </li>
+                                                        <li class="info_itm">
+                                                            <span class="itm_division n4">모집기간</span>
+                                                            <span class="itm_des">2024-04-16 ~ 2024-04-25</span>
+                                                        </li>
+                                                        <li class="info_itm">
+                                                            <span class="itm_division n5">교육기간</span>
+                                                            <span class="itm_des">2024-04-16 ~ 2024-04-25</span>
+                                                        </li>
+                                                    </ul>
+                                                    <a class="info_detail btn" href="$">
+                                                        <span>상세보기</span>
+                                                    </a>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="thumbnail_itm">
+                                            <a href="" class="thumbnail_anchor">
+                                                <div class="thumbnail_img">
+                                                    <div class="top_text">
+                                                        <span class="text_category">교육·강좌</span>
+                                                        <span class="text_state">접수중</span>
+                                                    </div>
+                                                    <div class="img_wrap">
+                                                        <img src="../booking/images/main/card_img02.png" alt="">
+                                                    </div>
+                                                    <div class="bottom_text">
+                                                        <span>무료</span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="thumbnail_info">
+                                                    <div class="info_title">
+                                                        <span>장장위석관보건지소 9월 영유아
+                                                            모성 프로그램 신청 
+                                                        </span>
+                                                    </div>
+                                                    <ul class="info_list">
+                                                        <li class="info_itm">
+                                                            <span class="itm_division n1">신청정원</span>
+                                                            <span class="itm_des"><em class="application">10</em>/123</span>
+                                                        </li>
+                                                        <li class="info_itm">
+                                                            <span class="itm_division n2">장 소</span>
+                                                            <span class="itm_des">성북구청교육센터</span>
+                                                        </li>
+                                                        <li class="info_itm">
+                                                            <span class="itm_division n3">대 상</span>
+                                                            <span class="itm_des">청소년</span>
+                                                        </li>
+                                                        <li class="info_itm">
+                                                            <span class="itm_division n4">모집기간</span>
+                                                            <span class="itm_des">2024-04-16 ~ 2024-04-25</span>
+                                                        </li>
+                                                        <li class="info_itm">
+                                                            <span class="itm_division n5">교육기간</span>
+                                                            <span class="itm_des">2024-04-16 ~ 2024-04-25</span>
+                                                        </li>
+                                                    </ul>
+                                                    <a class="info_detail btn" href="$">
+                                                        <span>상세보기</span>
+                                                    </a>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="thumbnail_itm">
+                                            <a href="" class="thumbnail_anchor">
+                                                <div class="thumbnail_img">
+                                                    <div class="top_text">
+                                                        <span class="text_category">교육·강좌</span>
+                                                        <span class="text_state">접수중</span>
+                                                    </div>
+                                                    <div class="img_wrap">
+                                                        <img src="../booking/images/main/card_img02.png" alt="">
+                                                    </div>
+                                                    <div class="bottom_text">
+                                                        <span>무료</span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="thumbnail_info">
+                                                    <div class="info_title">
+                                                        <span>장장위석관보건지소 9월 영유아
+                                                            모성 프로그램 신청 
+                                                        </span>
+                                                    </div>
+                                                    <ul class="info_list">
+                                                        <li class="info_itm">
+                                                            <span class="itm_division n1">신청정원</span>
+                                                            <span class="itm_des"><em class="application">10</em>/123</span>
+                                                        </li>
+                                                        <li class="info_itm">
+                                                            <span class="itm_division n2">장 소</span>
+                                                            <span class="itm_des">성북구청교육센터</span>
+                                                        </li>
+                                                        <li class="info_itm">
+                                                            <span class="itm_division n3">대 상</span>
+                                                            <span class="itm_des">청소년</span>
+                                                        </li>
+                                                        <li class="info_itm">
+                                                            <span class="itm_division n4">모집기간</span>
+                                                            <span class="itm_des">2024-04-16 ~ 2024-04-25</span>
+                                                        </li>
+                                                        <li class="info_itm">
+                                                            <span class="itm_division n5">교육기간</span>
+                                                            <span class="itm_des">2024-04-16 ~ 2024-04-25</span>
+                                                        </li>
+                                                    </ul>
+                                                    <a class="info_detail btn" href="$">
+                                                        <span>상세보기</span>
+                                                    </a>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="thumbnail_control">
+                                        <button type="button" class="thumbnail_btn thumbnail_prev">이전보기</button>
+                                        <button type="button" class="thumbnail_btn thumbnail_next">다음보기</button>
+                                    </div>
+                                </div>
+                                <div class="cont_pannel list">
+                                    <div class="array_btns">
+                                        <div class="btn_wrap"><button class="array_btn recent active">최신순</button></div>
+                                        <div class="btn_wrap"><button class="array_btn popular">인기순</button></div>
+                                    </div>
+                                    <div class="table_wrap">
+                                        <div class="row total">
+                                            <div class="col-12 col-sm-24 margin_t_10 small">
+                                                총 항목 수&nbsp;:&nbsp;<em class="em_blue" data-mask="#,##0" data-mask-reverse="true">1,432</em>건
+                                            </div>
+                                        </div>
+                                        <table class="p-table simple" data-table="rwd" data-tabletype="simple" data-breakpoint="760">
+                                            <caption>공연안내 - 번호, 공연명, 공연장, 공연기간 순으로 정보제공</caption>
+                                            <colgroup>
+                                                <col style="width:8%">
+                                                <col>
+                                                <col>
+                                                <col>
+                                            </colgroup>
+                                            <thead>
+                                            <tr>
+                                                <th scope="col">번호</th>
+                                                <th scope="col">프로그램명</th>
+                                                <th scope="col">접수기간</th>
+                                                <th scope="col">교육일시</th>
+                                                <th scope="col">교육장소</th>
+                                                <th scope="col">신청/정원</th>
+                                                <th scope="col">진행상태</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody class="text_center">
+                                            <tr>
+                                                <td>1</td>
+                                                <td class="p-subject">
+                                                    <a href="#">2024 상반기 성북열린시민대학 수강생모집</a>
+                                                </td>
+                                                <td>2024.08.01~2024.08.31</td>
+                                                <td>2024.08.01~2024.08.31</td>
+                                                <td>성북구청교육센터</td>
+                                                <td>1/10</td>
+                                                <!-- 접수중  ing / 접수예정 expect / 접수마감 end 클래스명 붙음 -->
+                                                <td><span class="accept ing">접수중</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td class="p-subject">
+                                                    <a href="#">2024 상반기 성북열린시민대학 수강생모집</a>
+                                                </td>
+                                                <td>2024.08.01~2024.08.31</td>
+                                                <td>2024.08.01~2024.08.31</td>
+                                                <td>성북구청교육센터</td>
+                                                <td>1/10</td>
+                                                <td><span class="accept ing">접수중</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td class="p-subject">
+                                                    <a href="#">2024 상반기 성북열린시민대학 수강생모집</a>
+                                                </td>
+                                                <td>2024.08.01~2024.08.31</td>
+                                                <td>2024.08.01~2024.08.31</td>
+                                                <td>성북구청교육센터</td>
+                                                <td>1/10</td>
+                                                <td><span class="accept ing">접수중</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td class="p-subject">
+                                                    <a href="#">2024 상반기 성북열린시민대학 수강생모집</a>
+                                                </td>
+                                                <td>2024.08.01~2024.08.31</td>
+                                                <td>2024.08.01~2024.08.31</td>
+                                                <td>성북구청교육센터</td>
+                                                <td>1/10</td>
+                                                <td><span class="accept expect">접수예정</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td class="p-subject">
+                                                    <a href="#">2024 상반기 성북열린시민대학 수강생모집</a>
+                                                </td>
+                                                <td>2024.08.01~2024.08.31</td>
+                                                <td>2024.08.01~2024.08.31</td>
+                                                <td>성북구청교육센터</td>
+                                                <td>1/10</td>
+                                                <td><span class="accept end">접수마감</span></td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                        <div class="p-pagination">
+                                            <div class="p-page">
+                                                <span class="p-page__control">
+                                                    <a href="#" class="p-page__link prev-end"><span class="skip">처음 페이지</span></a>
+                                                    <a href="#" class="p-page__link prev"><span class="skip">이전 10 페이지</span></a>
+                                                    <a href="#" class="p-page__link prev-one">이전 페이지</a>
+                                                </span>
+                                                <span class="p-page__link-group">
+                                                    <strong title="현재 1페이지" class="p-page__link">1</strong>
+                                                    <a href="" title="2페이지 이동" class="p-page__link active">2</a>
+                                                    <a href="" title="3페이지 이동" class="p-page__link">3</a>
+                                                    <a href="" title="4페이지 이동" class="p-page__link">4</a>
+                                                    <a href="" title="5페이지 이동" class="p-page__link">5</a>
+                                                    <a href="" title="6페이지 이동" class="p-page__link">6</a>
+                                                    <a href="" title="7페이지 이동" class="p-page__link">7</a>
+                                                    <a href="" title="8페이지 이동" class="p-page__link">8</a>
+                                                    <a href="" title="9페이지 이동" class="p-page__link">9</a>
+                                                    <a href="" title="10페이지 이동" class="p-page__link">10</a>
+                                                </span>
+                                                <span class="p-page__control">
+                                                    <a href="#" class="p-page__link next-one">다음 페이지</a>
+                                                    <a href="#" class="p-page__link next"><span class="skip">다음 10 페이지</span></a>
+                                                    <a href="#" class="p-page__link next-end"><span class="skip">끝 페이지</span></a>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="rowgroup3">
+                <div class="wrap">
+                    <section class="quick">
+                        <h2 class="skip">관련사이트링크</h2>
+                        <div class="left">
+                            <div class="quick_itm edu">
+                                <a href="#" class="quick_anchor">
+                                    <div class="quick_title">
+                                        <span>교육/강좌</span>
+                                        <span class="edu_state">78</span>
+                                    </div>
+                                    <ul class="quick_list edu">
+                                        <li>
+                                            평생학습
+                                            (<span class="edu_state">30</span>)
+                                        </li>
+                                        <li>
+                                            여성취업교육센터
+                                            (<span class="edu_state">30</span>)
+                                        </li>
+                                        <li>
+                                            온가족행복망
+                                            (<span class="edu_state">30</span>)
+                                        </li>
+                                        <li>
+                                            도시관리공단
+                                            (<span class="edu_state">30</span>)
+                                        </li>
+                                        <li>
+                                            문화재단
+                                            (<span class="edu_state">30</span>)
+                                        </li>
+                                        <li>
+                                            50플러스센터
+                                            (<span class="edu_state">-</span>)
+                                        </li>
+                                    </ul>
+                                    <div class="quick_btn"></div>
+                                </a>
+                            </div>
+                            <div class="quick_itm rental">
+                                <a href="#" class="quick_anchor">
+                                    <div class="quick_title">
+                                        <span>대관/시설</span>
+                                    </div>
+                                    <ul class="quick_list rental">
+                                        <li>
+                                            삼척수련원
+                                        </li>
+                                        <li>
+                                            사회적경제센터
+                                        </li>
+                                        <li>
+                                            온가족행복망
+                                        </li>
+                                        <li>
+                                            도시관리공단
+                                        </li>
+                                        <li>
+                                            50플러스센터
+                                        </li>
+                                    </ul>
+                                    <div class="quick_btn"></div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="top">
+                                <div class="quick_itm small">
+                                    <a href="" class="quick_anchor">
+                                        <span class="tag n1">체험</span>
+                                        <span class="text">
+                                            성북 <br />
+                                            시티투어
+                                        </span>
+                                        <span class="btn_arrow exp"></span>
+                                    </a>
+                                </div>
+                                
+                                <div class="quick_itm small">
+                                    <a href="" class="quick_anchor">
+                                        <span class="tag n1">체험</span>
+                                        <span class="text">
+                                            성북 <br />
+                                            생태체험관
+                                        </span>
+                                        <span class="btn_arrow exp"></span>
+                                    </a>
+                                </div>
+                                
+                                <div class="quick_itm small">
+                                    <a href="" class="quick_anchor">
+                                        <span class="tag n2">대여</span>
+                                        <span class="text">
+                                            1인가구 <br />
+                                            물품대여
+                                        </span>
+                                        <span class="btn_arrow rent"></span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="bottom">
+                                <div class="quick_itm small">
+                                    <a href="" class="quick_anchor">
+                                        <span class="icon"></span>
+                                        <span class="text">
+                                            마을미디어 <br />
+                                            지원센터
+                                        </span>
+                                        <span class="btn_arrow"></span>
+                                    </a>
+                                </div>
+
+                                <div class="quick_itm small">
+                                    <a href="" class="quick_anchor">
+                                        <span class="icon"></span>
+                                        <span class="text">
+                                            문화재단
+                                        </span>
+                                        <span class="btn_arrow"></span>
+                                    </a>
+                                </div>
+
+                                <div class="quick_itm small">
+                                    <a href="" class="quick_anchor">
+                                        <span class="icon"></span>
+                                        <span class="text">
+                                            도시관리공단
+                                        </span>
+                                        <span class="btn_arrow"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="rowgroup4">
+                <div class="wrap">
+                    <section class="bookmark">
+                        <h2 class="skip">자주찾는 메뉴</h2>
+                        <ul class="bookmark_list">
+                            <li class="bookmark_item n1">
+                                <a href="" class="bookmark_anchor">
+                                    <span class="bookmark_title">이용방법</span>
+                                    <span class="bookmark_des">
+                                        시설분류 및 시설의 사용목적에 <br />
+                                        유의하여 신청 바랍니다.
+                                    </span>
+                                    <span class="arrow_btn"></span>
+                                </a>
+                            </li>
+                            <li class="bookmark_item n2">
+                                <a href="" class="bookmark_anchor">
+                                    <span class="bookmark_title">나의 접수현황</span>
+                                    <span class="bookmark_des">
+                                        교육/강좌를 신청하셨나요?<br />
+                                        편리하게 접수내역을 확인해보세요.
+                                    </span>
+                                    <span class="arrow_btn"></span>
+                                </a>
+                            </li>
+                            <li class="bookmark_item n3">
+                                <a href="" class="bookmark_anchor">
+                                    <span class="bookmark_title">기관 연락처</span>
+                                    <span class="bookmark_des">
+                                        세부사항은 해당 기관에<br />
+                                        문의해 보세요.
+                                    </span>
+                                    <span class="arrow_btn"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <footer id="footer">
+            <div class="wrap">
+
+                <div class="banner">
+                    <h2 class="skip">배너모음</h2>
+                    <div class="banner_list">
+                        <div class="banner_item"><a href="#n" target="_blank" title="새창" rel="noopener noreferrer"
+                                class="banner_anchor">배너모음링크</a></div>
+                        <div class="banner_item"><a href="#n" target="_blank" title="새창" rel="noopener noreferrer"
+                                class="banner_anchor">배너모음링크</a></div>
+                        <div class="banner_item"><a href="#n" target="_blank" title="새창" rel="noopener noreferrer"
+                                class="banner_anchor">배너모음링크</a></div>
+                        <div class="banner_item"><a href="#n" target="_blank" title="새창" rel="noopener noreferrer"
+                                class="banner_anchor">배너모음링크</a></div>
+                        <div class="banner_item"><a href="#n" target="_blank" title="새창" rel="noopener noreferrer"
+                                class="banner_anchor">배너모음링크</a></div>
+                        <div class="banner_item"><a href="#n" target="_blank" title="새창" rel="noopener noreferrer"
+                                class="banner_anchor">배너모음링크</a></div>
+                        <div class="banner_item"><a href="#n" target="_blank" title="새창" rel="noopener noreferrer"
+                                class="banner_anchor">배너모음링크</a></div>
+                        <div class="banner_item"><a href="#n" target="_blank" title="새창" rel="noopener noreferrer"
+                                class="banner_anchor">배너모음링크</a></div>
+                        <div class="banner_item"><a href="#n" target="_blank" title="새창" rel="noopener noreferrer"
+                                class="banner_anchor">배너모음링크</a></div>
+                        <div class="banner_item"><a href="#n" target="_blank" title="새창" rel="noopener noreferrer"
+                                class="banner_anchor">배너모음링크</a></div>
+                    </div>
+                    <div class="banner_control">
+                        <button type="button" class="banner_prev">이전</button>
+                        <button type="button" class="banner_auto"></button>
+                        <button type="button" class="banner_next">다음</button>
+                        <a href="#n" class="banner_more">더보기</a>
+                    </div>
+                </div>
+
+                <div class="site">
+                    <h2 class="skip">관련사이트</h2>
+                    <ul class="site_list">
+                        <li class="site_item toggle">
+                            <button type="button" class="site_show"><span>관련사이트</span></button>
+                            <div class="site_panel">
+                                <ul class="site_ul">
+                                    <li class="site_li"><a href="#n" class="site_anchor">사이트링크</a></li>
+                                    <li class="site_li"><a href="#n" class="site_anchor">사이트링크</a></li>
+                                    <li class="site_li"><a href="#n" class="site_anchor">사이트링크</a></li>
+                                    <li class="site_li"><a href="#n" class="site_anchor">사이트링크</a></li>
+                                    <li class="site_li"><a href="#n" class="site_anchor">사이트링크</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="site_item toggle">
+                            <button type="button" class="site_show"><span>관련사이트</span></button>
+                            <div class="site_panel">
+                                <ul class="site_ul">
+                                    <li class="site_li"><a href="#n" class="site_anchor">사이트링크</a></li>
+                                    <li class="site_li"><a href="#n" class="site_anchor">사이트링크</a></li>
+                                    <li class="site_li"><a href="#n" class="site_anchor">사이트링크</a></li>
+                                    <li class="site_li"><a href="#n" class="site_anchor">사이트링크</a></li>
+                                    <li class="site_li"><a href="#n" class="site_anchor">사이트링크</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="site_item toggle">
+                            <button type="button" class="site_show"><span>관련사이트</span></button>
+                            <div class="site_panel">
+                                <ul class="site_ul">
+                                    <li class="site_li"><a href="#n" class="site_anchor">사이트링크</a></li>
+                                    <li class="site_li"><a href="#n" class="site_anchor">사이트링크</a></li>
+                                    <li class="site_li"><a href="#n" class="site_anchor">사이트링크</a></li>
+                                    <li class="site_li"><a href="#n" class="site_anchor">사이트링크</a></li>
+                                    <li class="site_li"><a href="#n" class="site_anchor">사이트링크</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="site_item toggle">
+                            <button type="button" class="site_show"><span>관련사이트</span></button>
+                            <div class="site_panel">
+                                <ul class="site_ul">
+                                    <li class="site_li"><a href="#n" class="site_anchor">사이트링크</a></li>
+                                    <li class="site_li"><a href="#n" class="site_anchor">사이트링크</a></li>
+                                    <li class="site_li"><a href="#n" class="site_anchor">사이트링크</a></li>
+                                    <li class="site_li"><a href="#n" class="site_anchor">사이트링크</a></li>
+                                    <li class="site_li"><a href="#n" class="site_anchor">사이트링크</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="link">
+                    <h2 class="skip">바로가기</h2>
+                    <ul class="link_list">
+                        <li class="link_item n1"><a href="#n" class="link_anchor">바로가기</a></li>
+                        <li class="link_item n2"><a href="#n" class="link_anchor">바로가기</a></li>
+                        <li class="link_item n3"><a href="#n" class="link_anchor">바로가기</a></li>
+                        <li class="link_item n4"><a href="#n" class="link_anchor">바로가기</a></li>
+                        <li class="link_item n5"><a href="#n" class="link_anchor">바로가기</a></li>
+                        <li class="link_item n6"><a href="#n" class="link_anchor">바로가기</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer_content">
+                    <div class="logo">
+                        <a href="./index.do" class="logo_anchor"><img src="/common/images/layout/footer_logo.png"
+                                alt="로고alt"></a>
+                    </div>
+                    <div class="info">
+                        <address><span class="info_address">주소</span><span class="info_tel">TEL : 000)000-0000</span>
+                        </address>
+                        <p class="info_copyright">Copyright(c) by All Right Reserved.</p>
+                    </div>
+                    <div class="wa">
+                        <a href="http://webwatch.or.kr/certification/situation.html" target="_blank" title="새창"
+                            rel="noopener noreferrer" class="wa_anchor">
+                            <img src="/common/images/layout/wa_mark.png"
+                                alt="과학기술정보통신부 WEB ACCESSIBILITY 마크(웹 접근성 품질인증 마크)">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--
+        cms 정보 불러오기
+        <div class="footer_info">
+            <address><span class="info_address">@@{siteInfo.insttAdres}</span><span class="info_tel">TEL : @@{siteInfo.insttTelno}</span></address>
+            <p class="info_copyright">@@{siteInfo.siteCpyrht}</p>
+        </div>
+        -->
+        </footer>
+
+
+    </div>
+</body>
+
+</html>
